@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * put example
- * return 0 (Success)
+ * main -  put example
+ * Return: 0 (Success)
  */
 int main(void)
 {
