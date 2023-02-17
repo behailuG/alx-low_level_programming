@@ -5,18 +5,11 @@
  */
 int main(void)
 {
-char lower[26] = "abcdefghijklmnopqrstuvwxyz";
-char upper[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-int i;
-for (i = 0; i < 26; i++)
-{
-putchar(lower[i]);
-}
-int j;
-for (j = 0; j < 26; j++)
-{
-putchar(upper[j]);
-}
+char letter;
+for (letter = 'a'; i <= 'z'; letter++)
+putchar(letter);
+for (letter = 'A'; j <= 'Z'; letter++)
+putchar(letter);
 putchar('\n');
 return (0);
 }
