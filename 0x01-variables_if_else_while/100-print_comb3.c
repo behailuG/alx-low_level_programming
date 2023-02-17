@@ -10,9 +10,7 @@ for (i = 0; i < 10; i++)
 {
 for (j = 0; j < 10; j++)
 {
-if (i == j)
-continue;
-if (j < i)
+if (i == j || j < i)
 continue;
 putchar((i % 10) + '0');
 putchar((j % 10) + '0');
