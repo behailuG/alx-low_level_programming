@@ -14,4 +14,5 @@ putchar(lower[i]);
 putchar(upper[i]);
 }
 putchar('\n');
+return (0);
 }
