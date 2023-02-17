@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - three digit 
+ * main - three digit
  * Return: Always 0.
  */
 int main(void)
