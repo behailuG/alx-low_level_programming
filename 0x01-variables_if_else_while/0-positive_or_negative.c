@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <time.h>
 /** 
-* main - positive or negative
-* betty style doc for function main goes there
-* Return: Always 0.
-*/
+ * main - positive or negative
+ * betty style doc for function main goes there
+ * Return: Always 0.
+ */
 int main(void)
 {
 int n;
