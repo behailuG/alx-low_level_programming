@@ -1,7 +1,7 @@
 #include <unistd.h>
 /**
  * main - dgg
- * Return: 1 (Success)
+ * Return: Always 1
  */
 int main(void)
 {
