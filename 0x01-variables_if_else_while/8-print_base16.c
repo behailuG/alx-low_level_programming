@@ -6,8 +6,11 @@
 int main(void)
 {
 int i;
-for (i = 0; i < 16; i++)
-putchar(i % 16 + '0');
+char letter;
+for (i = 0; i < 10; i++)
+putchar(i % 10 + '0');
+for (letter = 'a'; letter < 'f'; letter++)
+putchar(letter);
 putchar('\n');
 return (0);
 }
