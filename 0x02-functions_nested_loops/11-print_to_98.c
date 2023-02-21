@@ -5,9 +5,10 @@
  */
 void print_to_98(int n)
 {
-	int i, rem, k, len = 0, number;
+	int i, rem, k, nn, len = 0, number;
 	char str[5]="abcde";
     number = n;
+    nn = n;
     while (number != 0)
     {
         len++;
@@ -20,15 +21,15 @@ void print_to_98(int n)
         str[len - (i + 1)] = rem + '0';
     }
     str[len] = '\0';
-	if (n <= 98)
+	if (nn <= 98)
 	{
-    		for (; n <= 98; n++)
+    		for (; nn <= 98; n++)
     		{
     			for (k = 0; k < len; k++)
     			{
 		 		_putchar(str[k]);
     			}
-			if (n != 98)
+			if (nn != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -39,13 +40,13 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (; n >= 98; n--)
+		for (; nn >= 98; n--)
 		{
 			for (k = 0; k < len; k++)
 			{
 				_putchar(str[k]);
 			}
-			if (n != 98)
+			if (nn != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
