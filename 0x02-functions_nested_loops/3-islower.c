@@ -1,8 +1,9 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower - is lower
- * Return: always 1.
+ * _islower - is low case
+ * @c: parameter
+ * Return: always 1 if true else 0 for false.
  */
 int _islower(int c)
 {
