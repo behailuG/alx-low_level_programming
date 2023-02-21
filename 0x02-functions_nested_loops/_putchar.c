@@ -11,3 +11,11 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+void print_alphabet(void)
+{
+	char lower;
+	for (lower = 'a'; lower < = 'z'; lower++)
+	{
+		write(1,lower,1);
+	}
+}
