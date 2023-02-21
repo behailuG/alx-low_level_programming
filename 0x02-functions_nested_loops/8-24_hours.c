@@ -6,6 +6,8 @@ void jack_bauer(void)
 {
 	int i;
 	int j;
+	int k;
+	int l;
 
 	for (i = 0; i < 3; i++)
 	{
@@ -13,9 +15,6 @@ void jack_bauer(void)
 		{
 			if (i == 2 && j == 4)
 				break;
-			int k;
-			int l;
-
 			for (k = 0; k < 6; k++)
 			{
 				for (l = 0; l < 10; l++)
