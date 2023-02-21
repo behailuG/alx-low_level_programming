@@ -22,20 +22,20 @@ void print_to_98(int n)
     str[len] = '\0';
 	if (n <= 98)
 	{
-    for (; n < = 98; n++)
-    {
-    	for (k = 0; k < len; k++)
-    	{
-		 _putchar(str[k]);
-    	}
-	if (n != 98)
-	{
-		_putchar(',');
-		_putchar(' ');
-	}
-	else
-		break;
-    }
+    		for (; n < = 98; n++)
+    		{
+    			for (k = 0; k < len; k++)
+    			{
+		 		_putchar(str[k]);
+    			}
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+				break;
+    		}
 	}
 	else
 	{
@@ -49,10 +49,9 @@ void print_to_98(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-			else
-			{
-				break;
 			}
-		}
-	}
+			else
+				break;
+		}	
+	}}
 }
