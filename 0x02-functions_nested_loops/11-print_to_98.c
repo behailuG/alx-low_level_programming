@@ -21,6 +21,12 @@ void print_to_98(int n)
     }
     str[len] = '\0';
 
+    char k;
+
+    for (k = 0; k < len; k++)
+    {
+	    _putchar(str[k]);
+    }
 	if (n <= 98)
 	{
 		for (; n <= 98; n++)
