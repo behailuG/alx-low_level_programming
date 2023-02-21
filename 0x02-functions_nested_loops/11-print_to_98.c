@@ -15,7 +15,7 @@ void print_to_98(int n)
 		len++;
 		num /= 10;
 	}
-	char str[len];
+	char str[4];
 
 	for (i = 0; i < len; i++)
 	{
