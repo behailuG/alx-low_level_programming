@@ -12,8 +12,8 @@ int main(void)
 }
 void print_alphabet()
 {
-	int lower;
-	for (lewer = 'a'; lower <= 'z'; lower++)
+	char lower;
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		_putchar(lower);
 	}
