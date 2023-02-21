@@ -3,16 +3,12 @@
 /**
  * main - check the code
  *
+ * print_alphabet - prints lower case alphabet
  * Return: Always 0.
  */
-int main(void)
-{
-    print_alphabet();
-    return (0);
-}
 void print_alphabet()
 {
-	char lower;
+	int lower;
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		_putchar(lower);
