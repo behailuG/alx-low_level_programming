@@ -9,7 +9,7 @@ void print_to_98(int n)
 	int x;
 	int count;
 	char str[4];
-	int i, rem, len = 0, n;
+	int j, rem, len = 0, num;
 	num = n;
 
 	while (num != 0)
@@ -17,11 +17,11 @@ void print_to_98(int n)
 		len++;
 		num /= 10;
 	}
-	for (i = 0; i < len; i++)
+	for (i = 0; i < len; j++)
 	{
 		rem = n % 10;
 		n = n / 10;
-		str[len - (i + 1)] = rem + '0';
+		str[len - (j + 1)] = rem + '0';
 	}
 	str[len] = '\0';
 
