@@ -4,8 +4,7 @@
  */
 int main(void)
 {
-	int num, i, sum=0;
-	num=1024;
+	int i, sum=0;
 
 	for(i = 0; i < 1024; i++)
 	{
@@ -14,4 +13,5 @@ int main(void)
 			printf("%d", sum += i);
 		}
 	}
+	printf("\n");
 }
