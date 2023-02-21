@@ -20,41 +20,38 @@ void print_to_98(int n)
         str[len - (i + 1)] = rem + '0';
     }
     str[len] = '\0';
-
-    for (k = 0; k < len; k++)
-    {
-	    _putchar(str[k]);
-    }
 	if (n <= 98)
 	{
-		for (; n <= 98; n++)
-		{
-			if (n == 98)
-			{
-				_putchar(9 + '0');
-				_putchar(8 + '0');
-				break;
-			}
-			else
-			{
-
-				_putchar(n + '0');
-			}
-		}
+    for (; n < = 98; n++)
+    {
+    	for (k = 0; k < len; k++)
+    	{
+		 _putchar(str[k]);
+    	}
+	if (n != 98)
+	{
+		_putchar(',');
+		_putchar(' ');
+	}
+	else
+		break;
+    }
 	}
 	else
 	{
 		for (; n >= 98; n--)
 		{
-			if (n == 98)
+			for (k = 0; k < len; k++)
 			{
-				_putchar(9 + '0');
-				_putchar(8 + '0');
-				break;
+				_putchar(str[k]);
 			}
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
 			else
 			{
-				_putchar(n + '0');
+				break;
 			}
 		}
 	}
