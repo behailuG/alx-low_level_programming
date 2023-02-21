@@ -5,7 +5,7 @@
  */
 void print_to_98(int n)
 {
-	int i, rem, len = 0, number;
+	int i, rem, k, len = 0, number;
 	char str[5]="abcde";
     number = n;
     while (number != 0)
@@ -20,8 +20,6 @@ void print_to_98(int n)
         str[len - (i + 1)] = rem + '0';
     }
     str[len] = '\0';
-
-    int k;
 
     for (k = 0; k < len; k++)
     {
