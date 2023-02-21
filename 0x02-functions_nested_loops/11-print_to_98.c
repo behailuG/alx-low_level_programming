@@ -23,7 +23,7 @@ void print_to_98(int n)
     str[len] = '\0';
 	if (nn <= 98)
 	{
-    		for (; nn <= 98; n++)
+    		for (; nn <= 98; nn++)
     		{
     			for (k = 0; k < len; k++)
     			{
@@ -40,7 +40,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (; nn >= 98; n--)
+		for (; nn >= 98; nn--)
 		{
 			for (k = 0; k < len; k++)
 			{
