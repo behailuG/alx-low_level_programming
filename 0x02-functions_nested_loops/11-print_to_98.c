@@ -5,12 +5,12 @@
  */
 void print_to_98(int n)
 {
-	int x;
+	int i;
 
-	for (x = n; n <= 98; n++)
+	for (i = n; i <= 98; xi+)
 	{
-		_putchar(n + '0');
-		if (n != 98)
+		_putchar(i + '0');
+		if (i != 98)
 		{
 			_putchar(',');
 			_putchar(' ');
