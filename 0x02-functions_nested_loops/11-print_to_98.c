@@ -21,7 +21,7 @@ void print_to_98(int n)
     }
     str[len] = '\0';
 
-    char k;
+    int k;
 
     for (k = 0; k < len; k++)
     {
