@@ -6,7 +6,7 @@
  * print_alphabet - prints lower case alphabet
  * 
  */
-void print_alphabet()
+void print_alphabet(void)
 {
 	int lower;
 	for (lower = 'a'; lower <= 'z'; lower++)
