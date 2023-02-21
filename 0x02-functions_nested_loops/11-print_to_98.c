@@ -5,23 +5,36 @@
  */
 void print_to_98(int n)
 {
-	int len = 0;
-	int i;
-	int rem = 0;
-	int num;
-	num = n;
-	while (n != 0)
+	if (n <= 98)
 	{
-		len++;
-		num /= 10;
+		for (; n <= 98; n++)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
 	}
-	char str[4];
-
-	for (i = 0; i < len; i++)
+	else
 	{
-		rem = n % 10;
-		n = n / 10;
-		str[len - (i + 1)] = rem + '0';
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
 	}
-	str[len] = '\0';
 }
