@@ -5,5 +5,5 @@
  */
 int _islower(int c)
 {
-	return islower(c) == 2? 1 : 0;
+	return (islower(a) == 512 ? 1 : 0;
 }
