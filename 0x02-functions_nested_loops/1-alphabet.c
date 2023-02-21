@@ -2,9 +2,7 @@
 
 /**
  * main - check the code
- *
  * print_alphabet - prints lower case alphabet
- * 
  */
 void print_alphabet(void)
 {
