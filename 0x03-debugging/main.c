@@ -11,7 +11,7 @@ void positive_or_negative(int i)
 	else if (i == 0)
 		printf("%d is zero\n", i);
 	else
-		printf("5d is negative\n", i);
+		printf("%d is negative\n", i);
 }
 int main(void)
 {
