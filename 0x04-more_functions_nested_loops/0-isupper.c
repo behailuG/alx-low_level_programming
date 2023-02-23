@@ -6,5 +6,5 @@
  */
 int _isupper(int c)
 {
-	return (isupper(c + '0') ? 1 : 0);
+	return ((c >= 65 && c <= 90) ? 1 : 0);
 }
