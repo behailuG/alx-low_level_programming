@@ -6,7 +6,7 @@
 void rev_string(char *s)
 {
 	int c, i;
-	char tmp
+	char tmp;
 
 	while (s[i++])
 		c++;
