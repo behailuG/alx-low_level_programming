@@ -19,8 +19,8 @@ void rev_string(char *s)
 	{
 		if (i < 0)
 			break;
-		a[c] = s[i];
+		a[c] = s[j];
 		i--;
 		c++;
-	}	
+	}
 }
