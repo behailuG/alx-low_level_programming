@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _puts - display string
  * @str: param
@@ -8,10 +7,11 @@ void _puts(char *str)
 {
 	int i;
 
+	i = 0;
 	while (str[i] != '\0')
 	{
-		put(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
-	put('\n');
+	_putchar('\n');
 }
