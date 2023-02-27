@@ -9,7 +9,8 @@ void rev_string(char *s)
 	char *a, aux;
 
 	a = s;
-
+	if (s[0] != '\0')
+	{
 	while (s[c] != '\0')
 	{
 		c++;
@@ -26,5 +27,6 @@ void rev_string(char *s)
 		s[i] = *a;
 		*a = aux;
 		a--;
+	}
 	}
 }
