@@ -17,13 +17,10 @@ void rev_string(char *s)
 	i--;
 	for (j = i; j > i - 1; j--)
 	{
-		if (i == 0)
-		{
+		if (i < 0)
+			break;
 		a[c] = s[i];
 		i--;
 		c++;
-		}
-		else
-			break;
 	}	
 }
