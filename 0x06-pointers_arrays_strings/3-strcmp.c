@@ -12,15 +12,15 @@ int _strcmp(char *s1, char *s2)
 	a = 0;
 	b = 0;
 	c = 0;
-	while (s1[a])
+	while (s1[a] != '\0')
 		a++;
-	while (s2[b])
+	while (s2[b] != '\0')
 		b++;
 	if (a >= b)
 		j = a;
 	else
 		j = b;
-	for (i = 0; i < j; c++)
+	for (i = 0; i < j; j++)
 	{
 		if (s1[i] == s2[i])
 			continue;
