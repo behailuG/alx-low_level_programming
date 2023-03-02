@@ -20,7 +20,7 @@ int _strcmp(char *s1, char *s2)
 		j = a;
 	else
 		j = b;
-	for (i = 0; i < j; j++)
+	for (i = 0; i < j; i++)
 	{
 		if (s1[i] == s2[i])
 			continue;
