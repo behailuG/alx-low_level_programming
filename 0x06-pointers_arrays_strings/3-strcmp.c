@@ -7,19 +7,27 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int c, i, j;
+	int a, b, c, i, j;
 
+	a = 0;
+	b = 0;
 	c = 0;
-	while (s1[c])
-		c++;
-	for (i = 0; i < c; c++)
+	while (s1[a])
+		a++;
+	while (s2[b])
+		b++;
+	if (a >= b)
+		j = a;
+	else
+		j = b;
+	for (i = 0; i < j; c++)
 	{
-		if (s1[i] > s2[i])
-			j = 1;
-		else if (s1[i] == s2[i])
-			j = 0;
+		if (s1[i] == s2[i])
+			continue;
 		else
-			j = -1;
+		{
+			c = s1[i] - s2[i];
+		}
 	}
-	return (j);
+	return (c);
 }
