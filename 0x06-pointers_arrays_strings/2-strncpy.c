@@ -9,6 +9,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int a = 0;
+
 	while (a < n && src[a])
 	{
 		dest[a] = src[a];
