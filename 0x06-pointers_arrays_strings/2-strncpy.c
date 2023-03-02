@@ -8,10 +8,8 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int c, i;
+	int i;
 
-	while (src[c] != '\0')
-		c++;
 	for (i = 0; i < n; i++)
 	{
 		if (src[i] != '\0')
