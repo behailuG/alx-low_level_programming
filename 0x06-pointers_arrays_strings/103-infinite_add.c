@@ -1,15 +1,11 @@
 #include "main.h"
-#include <sting.h>
+
 /**
- * rev_string - reverse
- * @n: n
- * *infinite_add - adding
- * @n1: n
- * @n2: n2
- * @r: r
- * @size_r: size
- * Return: r
+ * rev_string - reverse array
+ * @n: integer params
+ * Return: 0
  */
+
 void rev_string(char *n)
 {
 	int i = 0;
@@ -30,9 +26,19 @@ void rev_string(char *n)
 	}
 }
 
+/**
+ * infinite_add - add 2 numbers together
+ * @n1: text representation of 1st number to add
+ * @n2: text representation of 2nd number to add
+ * @r: pointer to buffer
+ * @size_r: buffer size
+ * Return: pointer to calling function
+ */
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int overflow = 0, i = 0, j = 0, digits = 0, val1 = 0, val2 = 0, temp_tot = 0;
+	int overflow = 0, i = 0, j = 0, digits = 0;
+	int val1 = 0, val2 = 0, temp_tot = 0;
 
 	while (*(n1 + i) != '\0')
 		i++;
@@ -69,4 +75,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	*(r + digits) = '\0';
 	rev_string(r);
 	return (r);
+}
 }
