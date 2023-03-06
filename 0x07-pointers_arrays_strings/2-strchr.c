@@ -11,9 +11,9 @@ char *_strchr(char *s, char c)
 
 	while (s[i])
 	{
-		if (s[i] == 'c')
+		if (s[i] == c)
 		{
-			s = s + i;
+			s += i;
 			return (s);
 		}
 	}
