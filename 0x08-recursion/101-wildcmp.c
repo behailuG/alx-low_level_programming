@@ -54,12 +54,12 @@ char *postfix_match(char *str, char *postfix)
 	return (postfix);
 }
 /**
- * validcmp - Compares
+ * wildcmp - Compares
  * @s1: The first string to
  * @s2: The second string to be
  * Return: If the strings can be considered identical - 1. Otherwise - 0.
  */
-int validcmp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '*')
 	{
