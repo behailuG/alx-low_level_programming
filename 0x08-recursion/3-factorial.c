@@ -2,7 +2,7 @@
 /**
  * factorial - factorial calc
  * @n: numbber of fictorial
- * Retutn: factorial
+ * Return: factorial
  */
 int factorial(int n)
 {
