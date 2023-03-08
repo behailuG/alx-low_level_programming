@@ -25,5 +25,5 @@ int _prime(int n, int i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-	_prime(n, i + 1);
+	return (_prime(n, i + 1));
 }
