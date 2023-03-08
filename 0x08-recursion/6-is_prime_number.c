@@ -25,9 +25,10 @@ int _prime(int n, int i)
 		return (1);
 	if (i < n)
 	{
-	if (n % i == 0)
-		return (0);
+		if (n % i == 0)
+			return (0);
 	}
 	else
-	return (_prime(n, i + 1));
+		return (_prime(n, i + 1));
+	return (0);
 }
