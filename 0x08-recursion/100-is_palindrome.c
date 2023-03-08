@@ -20,7 +20,7 @@ int is_palindrome(char *s)
  * @n2: second index
  * Return: 1 or 0.
  */
-int comparator(char *s, int n1, n2)
+int comparator(char *s, int n1, int n2)
 {
 	if (*(s + n1) == *(s + n2))
 	{
