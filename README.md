@@ -1,2 +1,1 @@
-#c Programing
-C programing
+pointer
