@@ -19,14 +19,14 @@ char *str_concat(char *s1, char *s2)
 
 	if (s != NULL)
 	{
-		while (k < i)
+		while (k < i && s1[k] != NULL)
 		{
 			s[k] = s1[k];
 			k++;
 		}
 		l = k;
 		k = 0;
-		while (k < j)
+		while (k < j && s2[k] != NULL)
 		{
 			s[l] = s2[k];
 			l++;
