@@ -8,7 +8,7 @@
 char **strtow(char *str)
 {
 	int i;
-	char **s;
+	char *s;
 
 	if (str == NULL)
 		return (NULL);
