@@ -7,7 +7,7 @@
  */
 char **strtow(char *str)
 {
-	int i, j = 0, k;
+	int i;
 	char **s;
 
 	if (str == NULL)
@@ -17,7 +17,9 @@ char **strtow(char *str)
 	{
 		if (str[i] == 9 || str[i] == 32)
 			str[i] = '$';
+		s[i] = str[i];
 		i++;
 	}
+
 	return (s);
 }
