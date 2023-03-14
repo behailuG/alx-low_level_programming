@@ -1,6 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+
+int len(char *str);
+int wcount(char *str);
 /**
  * len - length of word
  * @str: string
