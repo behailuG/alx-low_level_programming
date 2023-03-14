@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * len - length of word
@@ -63,6 +64,7 @@ char **strtow(char *str)
 				{
 					for (l = 0; l < letters; l++)
 						s[w][l] = str[i++];
+					printf("%S", s[w]);
 					s[w][l] = '\0';
 				}
 				else
