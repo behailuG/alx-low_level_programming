@@ -58,7 +58,7 @@ char **strtow(char *str)
 				while (str[i] == 32)
 					i++;
 				letters = len(str + i);
-				s[w] = malloc(sizeof(char *) * (letters + 1));
+				s[w] = malloc(sizeof(char) * (letters + 1));
 				if (s[w] != NULL)
 				{
 					for (l = 0; l < letters; l++)
@@ -75,6 +75,7 @@ char **strtow(char *str)
 			s[w] = NULL;
 			return (s);
 		}
+		return (NULL);
 	}
 	return (NULL);
 }
