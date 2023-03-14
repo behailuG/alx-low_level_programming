@@ -42,7 +42,7 @@ int wcount(char *str)
  */
 char **strtow(char *str)
 {
-	int i, w, words = 0, l, letters = 0;
+	int i = 0, w, words = 0, l, letters = 0;
 	char **s;
 
 	if (str == NULL || str[0] != '\0')
@@ -72,6 +72,7 @@ char **strtow(char *str)
 					return (NULL);
 				}
 			}
+			s[w] = NULL;
 			return (s);
 		}
 	}
