@@ -10,7 +10,7 @@ int len(char *str)
 {
 	int i = 0;
 
-	while (str[i] != 32)
+	while (*(str + i) && *(str + i) != 32)
 		i++;
 	return (i);
 }
