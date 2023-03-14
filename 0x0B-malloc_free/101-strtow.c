@@ -1,78 +1,79 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
-int len(char *str);
-int wcount(char *str);
 /**
- * len - length of word
- * @str: string
- * Return: length of word
+ * count_word - helper function to count the number of words in a string
+ * @s: string to evaluate
+ *
+ * Return: number of words
  */
-int len(char *str)
+int count_word(char *s)
 {
-	int i = 0;
+	int flag, c, w;
 
-	while (*(str + i) && *(str + i) != 32)
-		i++;
-	return (i);
-}
-/**
- * wcount - word count
- * @str: string
- * Return: word
- */
-int wcount(char *str)
-{
-	int i = 0, j = 0, word = 0;
+	flag = 0;
+	w = 0;
 
-	while (str[i] != '\0')
-		i++;
-	for (; j < i; j++)
+	for (c = 0; s[c] != '\0'; c++)
 	{
-		if (str[j] != 32)
+		if (s[c] == ' ')
+			flag = 0;
+		else if (flag == 0)
 		{
-			word++;
-			j += len(str + j);
+			flag = 1;
+			w++;
 		}
 	}
-	return (word);
-}
 
+	return (w);
+}
 /**
- * **strtow - string substring
- * @str: string
- * Return: return string
+ * **strtow - splits a string into words
+ * @str: string to split
+ *
+ * Return: pointer to an array of strings (Success)
+ * or NULL (Error)
  */
 char **strtow(char *str)
 {
-	int i = 0, w, words = 0, l, letters = 0;
-	char **s;
+	char **matrix, *tmp;
+	int i, k = 0, len = 0, words, c = 0, start, end;
 
-	if (str == NULL || str[0] != '\0')
-		return (NULL);
-	words = wcount(str);
+	while (*(str + len))
+		len++;
+	words = count_word(str);
 	if (words == 0)
 		return (NULL);
-	s = malloc(sizeof(char *) * (words + 1));
-	if (s == NULL)
+
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
+	if (matrix == NULL)
 		return (NULL);
-	for (w = 0; w < words; w++)
+
+	for (i = 0; i <= len; i++)
 	{
-		while (str[i] == 32)
-			i++;
-		letters = len(str + i);
-		s[w] = malloc(sizeof(char) * (letters + 1));
-		if (s[w] == NULL)
+		if (str[i] == ' ' || str[i] == '\0')
 		{
-			for (; w >= 0; w--)
-				free(s[w]);
-			free(s);
-			return (NULL);
+			if (c)
+			{
+				end = i;
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				if (tmp == NULL)
+					return (NULL);
+
+				while (start < end)
+				*tmp++ = str[start++];
+				*tmp = '\0';
+				matrix[k] = tmp - c;
+				k++;
+				c = 0;
+			}
 		}
-		for (l = 0; l < letters; l++)
-			s[w][l] = str[i++];
-		s[w][l] = '\0';
+		else if (c++ == 0)
+			start = i;
 	}
-	s[w] = NULL;
-	return (s);
+
+	matrix[k] = NULL;
+
+	return (matrix);
 }
+
