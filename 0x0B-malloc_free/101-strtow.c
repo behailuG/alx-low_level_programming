@@ -51,34 +51,29 @@ char **strtow(char *str)
 	if (str == NULL || str[0] != '\0')
 		return (NULL);
 	words = wcount(str);
-	if (words > 0)
-	{
-		s = malloc(sizeof(char *) * (words + 1));
-		if (s != NULL)
-		{
-			for (w = 0; w < words; w++)
-			{
-				while (str[i] == 32)
-					i++;
-				letters = len(str + i);
-				s[w] = malloc(sizeof(char) * (letters + 1));
-				if (s[w] != NULL)
-				{
-					for (l = 0; l < letters; l++)
-						s[w][l] = str[i++];
-					s[w][l] = '\0';
-				}
-				else
-				{
-					free(s[w]);
-					free(s);
-					return (NULL);
-				}
-			}
-			s[w] = NULL;
-			return (s);
-		}
+	if (words == 0)
 		return (NULL);
+	s = malloc(sizeof(char *) * (words + 1));
+	
+	if (s == NULL)
+		return (NULL);
+	for (w = 0; w < words; w++)
+	{
+		while (str[i] == 32)
+			i++;
+		letters = len(str + i);
+		s[w] = malloc(sizeof(char) * (letters + 1));
+		if (s[w] == NULL)
+		{
+			for (; w >= 0; w--)
+				free(s[w]);
+			free(s);
+			return (NULL);
+		}
+		for (l = 0; l < letters; l++)
+			s[w][l] = str[i++];
+		s[w][l] = '\0';
 	}
-	return (NULL);
+	s[w] = NULL;
+	return (s);
 }
