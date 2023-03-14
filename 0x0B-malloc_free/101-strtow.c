@@ -64,7 +64,7 @@ char **strtow(char *str)
 				{
 					for (l = 0; l < letters; l++)
 						s[w][l] = str[i++];
-					printf("%S", s[w]);
+					printf("%S", *s[w]);
 					s[w][l] = '\0';
 				}
 				else
