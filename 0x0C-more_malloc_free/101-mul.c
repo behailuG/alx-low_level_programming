@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			}
 			j++;
 		}
-		mul *= log10(argv[i]);
+		mul *= atol(argv[i]);
 		i++;
 	}
 	printf("%lu\n", mul);
