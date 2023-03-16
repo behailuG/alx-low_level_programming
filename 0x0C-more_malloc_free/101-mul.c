@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+#include <math.h>
 /**
  * main - main method
  * @argc: number of argument
@@ -29,7 +30,7 @@ int main(int argc, char *argv[])
 			}
 			j++;
 		}
-		mul *= atol(argv[i]);
+		mul *= log10(argv[i]);
 		i++;
 	}
 	printf("%lu\n", mul);
