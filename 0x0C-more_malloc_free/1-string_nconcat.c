@@ -30,9 +30,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	j = 0;
 	while (l < i)
 	{
-		if (l < i)
+		if (l <= i)
 			s[l] = s1[l];
-		if (s2[j] != '\0')
+		if (l >= i)
 		{
 			s[l] = s2[j];
 			j++;
