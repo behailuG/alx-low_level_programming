@@ -8,14 +8,14 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i = 0, j = 0;
+	unsigned int i = 0, j = 0;
 	char *s;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	j = nmemb * size;
-	s = (int *)calloc(j, sizeof(int));
+	s = (unsigned int *)calloc(j, sizeof(unsigned int));
 	if (s == NULL)
 		return (NULL);
 	return (s);
