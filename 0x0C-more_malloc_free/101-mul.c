@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			}
 			j++;
 		}
-		mul *= argv[i];
+		mul *= atol(argv[i]);
 		i++;
 	}
 	printf("%lu\n", mul);
