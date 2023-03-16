@@ -8,14 +8,19 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i = 0;
+	int i = 0, j = 0;
 	char *s;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	i = nmemb * size;
-	s = (int *)calloc(i, sizeof(int));
+	s = malloc();
 	if (s == NULL)
 		return (NULL);
+	while (j < i)
+	{
+		s[i] = 0;
+		j++;
+	}
 	return (s);
 }
