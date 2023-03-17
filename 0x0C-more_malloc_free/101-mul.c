@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 	str = malloc(sizeof(int) * len);
 	if (result == NULL)
 		return (NULL);
-	for (i = 0; i <= len - 1; i++)
+	for (i = 0; i <= len1 + len2; i++)
 		str[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
