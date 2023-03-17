@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
 	str = malloc(sizeof(int) * len);
-	if (result == NULL)
+	if (str == NULL)
 		return (NULL);
 	for (i = 0; i <= len1 + len2; i++)
 		str[i] = 0;
