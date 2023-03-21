@@ -1,3 +1,4 @@
+#ifndef BEHAILU
 #define BEHAILU
 
 /**
@@ -18,3 +19,4 @@ struct dog
  * dog_t - Typedef for dog structure
  */
 typedef struct dog dog_t;
+#endif
