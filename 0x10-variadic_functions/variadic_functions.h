@@ -1,5 +1,5 @@
-#ifndef _HEADER_
-#define _HEADER_
+#ifndef BEHAILU
+#define BEHAILU
 #include <stdarg.h>
 
 int _putchar(char c);
