@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  * main - Entry point
-  * @argc: The argument count
-  * @argv: The argument vector
-  *
-  * Return: 1
-  */
+	* main - Entry point
+	* @argc: The argument count
+	* @argv: The argument vector
+	*
+	* Return: 1
+	*/
 int main(int argc, char **argv)
 {
 	if (argc != 3)
@@ -16,14 +16,13 @@ int main(int argc, char **argv)
 
 	copy_file(argv[1], argv[2]);
 	exit(0);
-	return (0)
 }
 
 /**
-  * copy_file - copy content of file
-  * @src: source letter
-  * @dest: destination
-  */
+	* copy_file - copy content of file
+	* @src: source letter
+	* @dest: destination
+	*/
 void copy_file(const char *src, const char *dest)
 {
 	int ofd, tfd, readed;
